@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>Task Manager</title>
+        <meta name="viewport" content="width-device-width,initial-scale=1.0" >
+        <link href="./task manager.css" rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="left-section">
+                <div>
+                    <div>
+                        <i id="red-circle" class="fas fa-circle top-circles"></i>
+                        <i id="yellow-circle" class="fas fa-circle top-circles"></i>
+                        <i id="green-circle" class="fas fa-circle top-circles"></i>
+                    </div> 
+                    <i id="eliptical-icon" class="fas fa-ellipsis-h"></i>
+                </div>
+                <div id="left-section-lists">
+                    <div><i class="fas fa-inbox"></i> Inbox</div>
+                    <div><i class="far fa-star"></i> Today</div>
+                    <div><i class="fas fa-calendar-week"></i> Upcoming</div>
+                    <div><i class="fas fa-shopping-basket"></i> Anyitme</div>
+                    <div><i class="far fa-calendar-minus"></i> Someday</div>
+                    <div><i class="far fa-trash-alt"></i> Trash</div>    
+                </div>
+                <div class="checkbox-section">
+                    <label><input class="red-checkboxes" type="checkbox" checked><span class="left-section-checkmarks"></span> <p>Family</p></label>
+                    <label><input class="red-checkboxes" type="checkbox"><span class="left-section-checkmarks"></span> <p>Vacation Planning</p></label>
+                    <label><input class="red-checkboxes" type="checkbox"><span class="left-section-checkmarks"></span> <p>Buy a new car</p></label>
+                    <label><input class="red-checkboxes" type="checkbox"><span class="left-section-checkmarks"></span> <p>Festival Ideas</p></label>
+                </div>
+                <div class="checkbox-section">
+                    <label><input class="green-checkboxes" type="checkbox" checked><span class="left-section-checkmarks"></span> <p>Work</p></label>
+                    <label><input class="green-checkboxes" type="checkbox"><span class="left-section-checkmarks"></span> <p>Onboarding Plan</p></label>
+                    <label><input class="green-checkboxes" type="checkbox"><span class="left-section-checkmarks"></span> <p>Invoice Review</p></label>
+                    <label><input class="green-checkboxes" type="checkbox"><span class="left-section-checkmarks"></span> <p>Presentation Work</p></label>
+                </div>
+                <div id="plus"><i class="fas fa-plus"></i></div>
+            </div>
+            <div id="middle-section">
+                <h1>Today Task</h1>
+                <div id="menus">
+                    <div><span>10</span>All</div>
+                    <div>Important</div>
+                    <div><span>05</span>Notes</div>
+                    <div>Links</div>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox" checked><span class="checkmark"></span>Create Userflow Social Application Design</label>
+                    <button class="approved">Approved</button>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox" checked><span class="checkmark"></span>Homepage Design For Slimmuch Product</label>
+                    <button class="inprogress">In Progress</button>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox" checked><span class="checkmark"></span>Interactive prototype design - Web design</label>
+                    <button class="inreview">In Review</button>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox" checked><span class="checkmark"></span>Create Application Design for Topbuzz</label>
+                    <button class="inreview">In Review</button>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox"><span class="checkmark"></span>Make a wireframe for Courier Delivery App</label>
+                    <button class="inprogress">In Progress</button>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox"><span class="checkmark"></span>Create Marketplaces Dashboard Design</label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div id="heading-section">
+                    <h1>Upcoming Tasks</h1>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox"><span class="checkmark"></span>Make a wireframe for Courier Delivery App</label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox"><span class="checkmark"></span>Create Marketplaces Dashboard Design</label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox"><span class="checkmark"></span>Make a wireframe for Courier Delivery App</label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div class="list">
+                    <label><input type="checkbox"><span class="checkmark"></span>Create Marketplaces Dashboard Design</label>
+                    <button class="waiting">Waiting</button>
+                </div>
+            </div>
+            <div id="right-section">
+                <div id="user-box"><i class="far fa-user"></i><span>5</span></div>
+                <h2>Meeting Schedule</h2>
+                <div id="schedule-wrapper">
+                    <div class="meeting-schedule">
+                        <div class="time-division"><p class="meeting-time">8:05 AM - 9:20 AM</p><i class="fas fa-ellipsis-v"></i></div>
+                        <h3 class="meeting-name">Meetings Nazmul Hassan</h3>
+                        <img class="user" src="https://randomuser.me/api/portraits/men/32.jpg" alt="user">
+                        <img class="user" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user">
+                        <img class="user" src="https://randomuser.me/api/portraits/men/86.jpg" alt="user"> 
+                        <img class="user" src="https://randomuser.me/api/portraits/women/47.jpg" alt="user">
+                        <img class="user" src="https://uifaces.co/our-content/donated/KtCFjlD4.jpg" alt="user">
+                    </div>
+                    <div class="meeting-schedule">
+                        <div class="time-division"><p class="meeting-time">10:05 AM - 12:20 PM</p><i class="fas fa-ellipsis-v"></i></div>
+                        <h3 class="meeting-name">Product Development Team</h3>
+                        <div class="meeting-persons">
+                            <div>
+                                <img class="user" src="https://randomuser.me/api/portraits/men/32.jpg" alt="user">
+                                <img class="user" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user">
+                                <img class="user" src="https://randomuser.me/api/portraits/men/86.jpg" alt="user"> 
+                            </div>
+                            <span><i class="fas fa-check"></i>You Joined</span>
+                        </div>
+                    </div>
+                    <div class="meeting-schedule">
+                        <div class="time-division"><p class="meeting-time">3:00 PM - 4:20 PM</p><i class="fas fa-ellipsis-v"></i></div>
+                        <h3 class="meeting-name">Product Planning</h3>
+                        <img class="user" src="https://randomuser.me/api/portraits/men/32.jpg" alt="user">
+                        <img class="user" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user">
+                        <img class="user" src="https://randomuser.me/api/portraits/men/86.jpg" alt="user"> 
+                        <img class="user" src="https://randomuser.me/api/portraits/women/47.jpg" alt="user">
+                        <img class="user" src="https://uifaces.co/our-content/donated/KtCFjlD4.jpg" alt="user">
+                    </div>
+                    <div class="meeting-schedule">
+                        <div class="time-division"><p class="meeting-time">4:30 PM - 5:30 PM</p><i class="fas fa-ellipsis-v"></i></div>
+                        <h3 class="meeting-name">Social Product Review</h3>
+                        <div class="meeting-persons">
+                            <div>
+                                <img class="user" src="https://randomuser.me/api/portraits/men/32.jpg" alt="user">
+                                <img class="user" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user">
+                                <img class="user" src="https://randomuser.me/api/portraits/men/86.jpg" alt="user"> 
+                            </div>
+                            <span><i class="fas fa-plus"></i>13 Members</span>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

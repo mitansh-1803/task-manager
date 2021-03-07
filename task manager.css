@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-container{
+    display: flex;
+}
+
+#left-section{
+    width: 280px;
+    background-color: #F6F2E6;
+    min-height: 100vh;
+}
+#left-section>div{
+    margin-left: 40px;
+}
+#left-section>div:first-child{
+    margin: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+#red-circle{
+    color: #FF4D48;
+}
+#yellow-circle{
+    color: #FFC023;
+}
+#green-circle{
+    color: #7ED320;
+}
+.top-circles{
+    margin-right: 4px;
+    font-size: 14px;
+}
+#eliptical-icon{
+    color: #C2C6B5;
+}
+#left-section-lists{
+    color: #435B56;
+    padding-top: 20px;
+}
+#left-section-lists>div{
+    margin-top: 26px;
+    font-weight: 600;
+}
+#left-section-lists>div i{
+    margin-right: 12px;
+}
+.checkbox-section{
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.checkbox-section>label{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #78887E;
+    font-weight: 500;
+}
+.left-section-checkmarks{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 2px solid #78887E;
+    background-color: #F6F2E6;
+    margin-right: 12px;
+}
+.checkbox-section p{
+    margin: 0;
+}
+.red-checkboxes:checked ~ .left-section-checkmarks {
+    border: 2px solid #FE635C;
+}
+.red-checkboxes:checked ~ p{
+    color: #FE635C;
+}
+.green-checkboxes:checked ~ .left-section-checkmarks {
+    border: 2px solid #6FD1B7;
+}
+.green-checkboxes:checked ~ p{
+    color: #6FD1B7;
+}
+#plus{
+    width: 90x;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #FF4E48;
+    display: inline-block;
+    margin-bottom: 50px;
+    border-radius: 16px;
+    color: white;
+    border-top-left-radius: 0;
+    box-shadow: 0 6px 20px #aaa;
+}
+
+
+#middle-section{
+    width: calc( 75% - 280px);
+    background-color: #163631;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+#middle-section>h1{
+    color: white;
+    margin: 70px 50px 0 50px;
+    font-weight: 400;
+}
+#menus{
+    display: flex;
+    justify-content: space-between;
+}
+#menus>div{
+    width: 25%;
+    text-align: center;
+    padding: 40px;
+    color: #799893;
+    font-weight: 500;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #275148;
+}
+#menus>div:nth-child(2){
+    color: #D54942;
+    border-color: #D54942;
+    border-width: 2px;
+}
+#menus span{
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background-color: #2C574E;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px;
+    color: #406660;
+    font-weight: 500;
+    position: relative;
+}
+.list>button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.checkmark{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #eee;
+    margin-right: 12px;
+}
+.list input:checked ~ .checkmark {
+background-color: #FF4E48;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.list input:checked ~ .checkmark:after {
+display: block;
+}
+.list .checkmark:after {
+left: 12px;
+top: 10px;
+width: 2px;
+height: 5px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.list > div{
+    display: flex;
+    align-items: center;
+}
+.approved{
+    color: #9CE9C5;
+    background-color: #01C969;
+}
+.inprogress{
+    background-color: #553536;
+    color: #BB4126;
+}
+.inreview{
+    background-color: #554835;
+    color: #D59E0F;
+}
+.waiting{
+    background-color: #1A423A;
+    color: #829794;
+}
+#heading-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 50px 20px 50px;
+    color: white;
+    border-bottom: 1px solid  #275148;
+}
+#heading-section>h1{
+    font-weight: 500;
+    font-size: 28px;
+}
+
+
+
+#right-section{
+    width: 25%;
+    background-color: #FFFCF9;
+    min-height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#user-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#user-box>span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    background-color: #E6A389;
+    margin-left: 30px;
+    box-shadow: 1px 4px 16px #ddd;
+}
+#right-section>h2{
+    font-weight: 500;
+    margin: 40px 0;
+    color: #4E6660;
+}
+.meeting-schedule{
+    padding: 24px 28px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+.time-division{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+#schedule-wrapper>div:nth-of-type(4n + 1){
+    background-color: #FFF1D6;
+}
+#schedule-wrapper>div:nth-of-type(4n + 1) .time-division{
+    color: #91846B;
+}
+#schedule-wrapper>div:nth-of-type(4n + 1) .meeting-name{
+    color: #91846B;
+}
+#schedule-wrapper>div:nth-of-type(4n + 2){
+    background-color: #D1E5FE;
+}
+#schedule-wrapper>div:nth-of-type(4n + 2) .time-division{
+    color: #6A7F8F;
+}
+#schedule-wrapper>div:nth-of-type(4n + 2) .meeting-name{
+    color: #6A7F8F;
+}
+#schedule-wrapper>div:nth-of-type(4n + 3){
+    background-color: #FFD8D9;
+}
+#schedule-wrapper>div:nth-of-type(4n + 3) .time-division{
+    color: #7C5958;
+}
+#schedule-wrapper>div:nth-of-type(4n + 3) .meeting-name{
+    color: #7C5958;
+}
+#schedule-wrapper>div:nth-of-type(4n + 4){
+    background-color: #D8FFE2;
+}
+#schedule-wrapper>div:nth-of-type(4n + 4) .time-division{
+    color: #84A892;
+}
+#schedule-wrapper>div:nth-of-type(4n + 4) .meeting-name{
+    color: #84A892;
+}
+.time-division>p{
+    margin: 0;
+}
+.meeting-name{
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.user{
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.meeting-persons>span{
+    font-size: 10px;
+    font-weight: 500;
+    display: inline-block;
+}
+#schedule-wrapper>div:nth-of-type(4n + 2) .meeting-persons>span{
+    color: #6A7F8F;
+    background-color: #F0F7FF;
+}
+#schedule-wrapper>div:nth-of-type(4n + 4) .meeting-persons>span{
+    color: #84A892;
+    background-color: #FFFFFF;
+}
+.meeting-persons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.meeting-persons>span{
+    padding: 10px 12px;
+    border-radius: 16px;
+}
+.meeting-persons>span i{
+    margin-right: 8px;
+}
